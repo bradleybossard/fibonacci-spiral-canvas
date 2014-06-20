@@ -1,0 +1,8 @@
+{
+  "name": "fibonacci-spiral-canvas",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.0"
+  },
+  "devDependencies": {}
+}
