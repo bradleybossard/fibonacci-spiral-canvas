@@ -136,7 +136,7 @@ Spline.prototype.drawControlPoints = function(ctx, color){
 
 
     ctx.beginPath();
-    ctx.arc(p.x, p.y, 7, 0, 2 * Math.PI, false);
+    ctx.arc(p.x, p.y, 5, 0, 2 * Math.PI, false);
     ctx.fill();
     ctx.stroke();
   }
@@ -182,13 +182,13 @@ Spline.prototype.pos = function(time){
 */
 Spline.prototype.draw = function(ctx,color){
   ctx.strokeStyle = color || "#7e5e38"; // line color
-  ctx.lineWidth = 14;
+  ctx.lineWidth = 2;
   ctx.beginPath();
   var pos;
   for(var i=0; i<this.duration; i+=10){
     pos = this.pos(i); //bezier(i/max,p1, c1, c2, p2);
     if(Math.floor(i/100)%2==0) ctx.lineTo(pos.x, pos.y);
-    else ctx.moveTo(pos.x, pos.y);
+    //else ctx.moveTo(pos.x, pos.y);
   }
   ctx.stroke();
   return this;
