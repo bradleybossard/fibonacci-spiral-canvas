@@ -7,3 +7,4 @@ My main goal with this project is get more familiar with the raw browser <canvas
 
 ####Links
 * [HTML Canvas Cheatsheet] (http://cheatsheetworld.com/programming/html5-canvas-cheat-sheet/)
+* [Spline Interpolation] (http://scaledinnovation.com/analytics/splines/aboutSplines.html)
