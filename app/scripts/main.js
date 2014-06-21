@@ -1,1 +1,1 @@
-console.log('\'Allo \'Allo!');
+function fib(n) {  var seq = [];  var a = 0;  var b = 1;  var t;  while (n-- > 0) {    t = a;    a = b;    b += t;    seq.push(a);  }  //return a;  return seq;}$(document).ready(function() {  console.log('\'Allo \'Allo!');  var canvasEl = document.getElementById('fibonacci-canvas');  var context = canvasEl.getContext('2d');  var seq = fib(10);  //debugger;  //context.fillStyle = 'red';  //context.rect(0, 0, 200, 200);  //context.fill();});
